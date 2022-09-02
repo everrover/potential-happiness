@@ -1,0 +1,79 @@
+$screen-height: 100vh;
+$star-3-size: 7.5px;
+$star-2-size: 5px;
+$star-1-size: 3px;
+
+.starry-sky{
+	width:100%;
+	height: 100%;
+  background: radial-gradient(ellipse at bottom, $gray-8 0%, $gray-9 30%, $gray-10 100%);
+	overflow: hidden;
+}
+
+.stars-1{
+	animation: star-traverse 40s linear infinite;
+}
+
+.stars-2{
+	animation: star-traverse 120s linear infinite;
+}
+
+.stars-3{
+	animation: star-traverse 200s linear infinite;
+}
+
+@for $i from 1 through 3{
+	$size: #{$star-1-size};
+	$counts: 100;
+	$color: #{$gray-1};
+	@if $i==2 {
+		$size: #{$star-2-size};
+		$counts: 30;
+		$color: #{$gray-0};
+	}
+	@else if $i==3 { 
+		$size: #{$star-3-size};
+		$counts: 21;
+		$color: #{$white};
+	}
+	.stars-#{$i}{
+		border-radius: 100%;
+		background: white;
+		position: relative;
+	
+		& .star-#{$i}{
+			@apply absolute rounded-sm bg-transparent;
+			height: $size;
+			width: $size;
+			// border-radius: 100%;
+			box-shadow: $size $size $color;
+			&:after{
+				content:'';
+				@apply absolute rounded-sm bg-transparent;
+				transform: translateY(-100vh);
+				height: $size;
+				width: $size;
+				background: transparent;
+				box-shadow: $size $size $color;
+			}
+		}
+	
+		@for $j from 1 through $counts {
+			& .star-#{$i}:nth-child(#{$j}){
+				left: percentage( calc(random(100) / 100));
+				bottom: -#{random(100)}vh;
+			}
+		}
+	}
+}
+
+@keyframes star-traverse {
+	from{
+		// transform: rotate(0deg);
+		transform: translateY(0);
+	}
+	from{
+		// transform: rotate(360deg);
+		transform: translateY(100vh);
+	}
+}
