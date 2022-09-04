@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 448">
+  <g id="Layer_1-2" data-name="Layer 1">
+    <path fill="currentColor" stroke="currentColor" class="cls-1"
+      d="M320,256H512V400c0,25.6-22.4,48-48,48H48c-25.6,0-48-22.4-48-48V256H192v48a16,16,0,0,0,16,16h96a16,16,0,0,0,16-16Z" />
+    <path fill="currentColor" stroke="currentColor"
+      d="M464,96H384V48c0-25.6-22.4-48-48-48H176c-25.6,0-48,22.4-48,48V96H48C22.4,96,0,118.4,0,144v80H512V144C512,118.4,489.6,96,464,96ZM320,96H192V64H320Z" />
+  </g>
+</svg>

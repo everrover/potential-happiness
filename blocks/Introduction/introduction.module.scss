@@ -1,24 +1,40 @@
 .section {
-  @apply flex justify-between items-center;
-  & > div{
-    @apply w-auto;
-  }
+  @apply flex justify-center flex-wrap items-center border border-black;
+  width: calc(100% - 2px);
+  min-height: 80vh;
+  background-color: rgba(30,30,40,0.7);
+  background-image: url("/temp.png");
+  background-size: cover;
+  background-blend-mode: multiply;
 }
 
 .intro {
-  @apply border-4 border-red-100;
+  /* position: absolute;
+  left:0;
+  top: 0;
+  z-index: 10; */
+  width: clamp(20rem, 75vw, 48rem);
+  @apply px-4 py-2 ml-16 mr-4;
   & > h5 {
-    @apply font-heading text-base inline-block bg-gray-500 bg-opacity-20 text-cyan-500 px-4 py-2;
+    @apply font-heading text-2xl flex font-semibold bg-cyan-600 bg-opacity-20 text-cyan-500 px-5 py-3 rounded-xl;
+    width: fit-content;
     & > span {
-      @apply block;
+      @apply block mr-2;
       animation: wobble 2.5s infinite;
     }
-    
+  }
+
+  & > h1 {
+    @apply text-6xl font-bold text-gray-200 mr-2 mt-4 mb-2;
+  }
+
+  & > h3 {
+    @apply text-xl font-normal text-gray-400 mr-2 mt-4 mb-2;
   }
 }
 
 .illus {
-  @apply w-64 h-64;
+  @apply w-96 h-96 mr-16 ml-4;
 }
 
 @keyframes wobble {
@@ -27,23 +43,23 @@
     }
   
     15% {
-      transform: translate3d(-.25rem, 0, 0) rotate3d(0, 0, 1, -5deg) scale(1.05);
+      transform: translate3d(-.25rem, 0, 0) rotate3d(0, 0, 1, -25deg) scale(1.05);
     }
   
     30% {
-      transform: translate3d(.5rem, 0, 0) rotate3d(0, 0, 1, 3deg) scale(1.1);
+      transform: translate3d(.5rem, 0, 0) rotate3d(0, 0, 1, 15deg) scale(1.1);
     }
   
     45% {
-      transform: translate3d(-.375rem, 0, 0) rotate3d(0, 0, 1, -3deg) scale(1.15);
+      transform: translate3d(-.375rem, 0, 0) rotate3d(0, 0, 1, -15eg) scale(1.15);
     }
   
     60% {
-      transform: translate3d(.25rem, 0, 0) rotate3d(0, 0, 1, 2deg) scale(1.1);
+      transform: translate3d(.25rem, 0, 0) rotate3d(0, 0, 1, 10deg) scale(1.1);
     }
   
     75% {
-      transform: translate3d(-.125rem, 0, 0) rotate3d(0, 0, 1, -1deg) scale(1.05);
+      transform: translate3d(-.125rem, 0, 0) rotate3d(0, 0, 1, -5deg) scale(1.05);
     }
   
     to {

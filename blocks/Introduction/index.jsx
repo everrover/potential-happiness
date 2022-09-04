@@ -9,9 +9,8 @@ function Introduction(props) {
       <h5><span>👋🏻</span>, Abhishek here!</h5>
       <h1>A software engineer</h1>
       <h3>
-        I'm a software engineering professional. Curiousity, a high focus on learning, consistency and problem solving being my core virtues in that journey. 
-        I love working with software, but since we can't do everything at the same time, I currently focus on building web applications(both front-end and back-end) and learning about cyber-security.
-        In all that, my ethic being <mark>Work hard, play hard</mark>.
+        Curiousity, a high focus on learning, consistency and problem solving being the core of that journey. 
+        I love building software and I focus focus on engineering web applications and learning about cyber-security.
       </h3>
     </div>
     <div className={s.illus}>

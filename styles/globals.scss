@@ -1,12 +1,20 @@
 html,
 body {
   @apply m-0 p-0 text-gray-50;
-  background:rgb(0, 0, 0);
+  /* background: #1c3543; */
+  background: #070711;
+  overflow: hidden;
 }
 body {
-  @apply w-screen h-screen;
+  box-sizing: content-box;
 }
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@import './styles.scss';
+
+html, * {
+  box-sizing: content-box;
+}

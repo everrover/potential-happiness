@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #58595b;
+      }
+    </style>
+  </defs>
+  <g id="Layer_2" data-name="Layer 2">
+    <g id="Layer_1-2" data-name="Layer 1">
+      <path fill="currentColor" stroke="currentColor" class="cls-1"
+        d="M544,96V384H304a16,16,0,0,0-16,16v32a80,80,0,0,1-160,0V65A65,65,0,0,0,63,0H448A96.1,96.1,0,0,1,544,96Z" />
+      <path fill="currentColor" stroke="currentColor"
+        d="M64,0A64,64,0,0,0,0,64v48a16,16,0,0,0,16,16H128V65A65,65,0,0,0,64,0ZM192,512h16c-2.59,0-5.14-.13-7.66-.37C197.59,511.87,194.81,512,192,512ZM624,384H304a16,16,0,0,0-16,16v32a80,80,0,0,1-80,80H528A112,112,0,0,0,640,400v-.06A16,16,0,0,0,624,384Z" />
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 386.65 335">
+  <defs>
+    <style>
+      .cls-1 {
+        stroke-miterlimit: 10;
+        stroke-width: 30px;
+      }
+    </style>
+  </defs>
+  <g id="Layer_1-2" data-name="Layer 1">
+    <path class="cls-1" stroke="currentColor" fill="currentColor"
+      d="M15,118.62v-4A99.57,99.57,0,0,1,185,44.16l8.36,8.35,7.73-8.35a101.33,101.33,0,0,1,87.42-27.8,99.53,99.53,0,0,1,83.17,98.22v4a104.22,104.22,0,0,1-33.15,76.27L212.62,312.41a28.32,28.32,0,0,1-38.59,0L48.15,194.89A104.29,104.29,0,0,1,15,118.62Z" />
+  </g>
+</svg>

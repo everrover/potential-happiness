@@ -1,0 +1,52 @@
+@import '../../styles/colors';
+/* nav {
+  position: absolute;
+} */
+
+.toggle {
+  position: absolute;
+  z-index: 50;
+  top: 0;
+  right: 0;
+}
+
+.nav_element{
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 0;
+}
+
+.page_links{
+  @apply flex flex-col items-center;
+  & > .page_link{
+    @apply text-3xl my-4 px-4 uppercase text-cyan-600 hover:text-cyan-400;
+  }
+}
+
+.toggle{
+  @apply m-4;
+}
+
+.drawer {
+  position: absolute;
+  z-index: 10;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: clamp(20rem, 100vw, 28rem);
+  background-color: rgba($color: $gray-9, $alpha: 0.9);
+  @apply flex flex-col justify-between;
+  transform: translateX(100vw);
+  transition: transform 0.35s cubic-bezier(0.645,0.045,0.355,1);
+  /* visibility: hidden; */
+  &.is-visible {
+    transition: transform 0.35s cubic-bezier(0.645,0.045,0.355,1);
+    transform: translateX(0);
+    /* visibility: visible; */
+  }
+}
+
+.external{
+  @apply flex gap-6 justify-center py-12;
+}

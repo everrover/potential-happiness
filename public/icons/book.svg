@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+  <g fill='currentColor' stroke='currentColor' id="book_icon" data-name="Layer 1">
+    <path fill='currentColor' stroke='currentColor' className="cls-1"
+      d=" M96,448c-19.2,0-32-12.8-32-32s16-32,32-32H415.33c-1.93,16.24-1.76,48.38.53,64Z" />
+    <path fill='currentColor' stroke='currentColor' className="cls-1"
+      d="M96,384H424a24,24,0,0,0,24-24V32A32,32,0,0,0,416,0H96A96,96,0,0,0,0,96V416a96,96,0,0,0,96,96H424a24,24,0,0,0,24-24V472a24,24,0,0,0-24-24H96c-19.2,0-32-12.8-32-32S80,384,96,384Zm32-250a6,6,0,0,1,6-6H346a6,6,0,0,1,6,6v20a6,6,0,0,1-6,6H134a6,6,0,0,1-6-6Zm0,64a6,6,0,0,1,6-6H346a6,6,0,0,1,6,6v20a6,6,0,0,1-6,6H134a6,6,0,0,1-6-6Z" />
+  </g>
+</svg>

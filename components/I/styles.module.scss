@@ -1,0 +1,84 @@
+@import '../../styles/colors';
+
+@mixin size-gen($size, $ht) {
+  font-size: $size;
+  line-height: $ht;
+}
+
+.span{
+  height: 1em;
+  width: auto;
+  @apply inline-block;
+
+  // colors
+  &.sm{ @include size-gen(1rem, 1.5rem); }
+  &.md{ @include size-gen(1.25rem, 1.75rem); }
+  &.lg{ @include size-gen(1.5rem, 2rem); }
+  &.xl{ @include size-gen(1.875rem, 1.75rem); }
+  &.xl2{ @include size-gen(2.25rem, 2.5rem); }
+  &.xl3{ @include size-gen(3rem, 1); }
+  &.xl4{ @include size-gen(3.5rem, 1); }
+  &.xl5{ @include size-gen(4rem, 1); }
+  &.xl6{ @include size-gen(5rem, 1); }
+  &.green{ --theme-color-1: #{$green-4}; --theme-color-2: #{$green-6}; }
+  &.blue{ --theme-color-1: #{$blue-4}; --theme-color-2: #{$blue-6}; }
+  &.gray{ --theme-color-1: #{$gray-3}; --theme-color-2: #{$gray-5}; }
+  &.yellow{ --theme-color-1: #{$yellow-light}; --theme-color-2: #{$yellow-dark}; }
+  &.pink{ --theme-color-1: #{$pink-dark}; --theme-color-2: #{$pink-dark}; }
+  &.purple{ --theme-color-1: #{$purple-light}; --theme-color-2: #{$purple-dark}; }
+  &.orange{ --theme-color-1: #{$orange-light}; --theme-color-2: #{$orange-dark}; }
+
+  &.IN{
+    --color-1: var(--theme-color-1);
+    --color-2: var(--theme-color-2);
+  }
+  &.HOV{
+    --color-1: #{$gray-4};
+    --color-2: #{$gray-6};
+    &:hover{
+      --color-1: var(--theme-color-1);
+      --color-2: var(--theme-color-2);
+      cursor: pointer;
+    }
+  }
+  &.ACC{
+    // --color-1: inherit;
+    // --color-2: inherit;
+    font-size: inherit;
+    height: 1.25em;
+    color: inherit;
+     // can simply be `inherit` or 1em for same size as parent
+    line-height: 1;
+    >svg.er-icon{
+      color: inherit;
+      & *{color:inherit;}
+      &>g>path, &>path,
+      &>g>circle, &>circle{
+        color: inherit;
+        transition: color 0s ease-in-out;
+      }
+    }
+  }
+
+}
+
+svg.er-icon{
+  
+  height: inherit;
+
+  &>g>path, &>path,
+  &>g>circle, &>circle {
+    transition: color .3s ease-in-out;
+  }
+  
+  &>g>path:nth-child(odd), &>path,
+  &>g>circle:nth-child(odd), &>circle{
+    color: var(--color-1);
+  }
+
+  &>g>path:nth-child(even),
+  &>g>circle:nth-child(even){
+    color: var(--color-2);
+  }
+
+}
